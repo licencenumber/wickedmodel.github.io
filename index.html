@@ -13,6 +13,7 @@
      
      body {
   background-image: url("https://res.cloudinary.com/licencenumber/image/upload/v1605885065/download_v5bvof.png");
+  text-align: center;
 }
 a:link {
   color: purple;
@@ -124,7 +125,6 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"contactMe","qid":"1","text":"Contac
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f7ed99c2c2c7240ba580251"/>
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.21851" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.21851" />
-<form class="jotform-form" action="https://submit.jotform.com/submit/203247209154046/" method="post" name="form_203247209154046" id="203247209154046" accept-charset="utf-8" autocomplete="on">
   <input type="hidden" name="formID" value="203247209154046" />
   <input type="hidden" id="JWTContainer" value="" />
   <input type="hidden" id="cardinalOrderNumber" value="" />
@@ -166,9 +166,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"contactMe","qid":"1","text":"Contac
       <li class="form-line" data-type="control_button" id="id_2">
         <div id="cid_2" class="form-input-wide" data-layout="full">
           <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
-            <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
-              Submit
-            </button>
+            <button id="submit-button" class="float-left submit-button" >Submit</button>
+
+<script type="text/javascript">
+    document.getElementById("submit").onclick = function () {
+        location.href = "https://thankyoupage.ga";
+    };
+</script>
           </div>
         </div>
       </li>
@@ -196,6 +200,7 @@ for (var i = 0; i < all_spc.length; i++)
   </div>
   <div class="formFooter f6">
     <div class="formFooter-wrapper formFooter-leftSide">
+
 </body>
   
 </html>
